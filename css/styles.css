@@ -10417,8 +10417,9 @@ aside {
   outline:0;
   opacity: 5;
   padding: 5px;
-  margin-top: 10%;
-  box-shadow: inset;
+  margin-bottom: 5%;
+  align-content: center;
+  text-align: center;
 }
 
 /* .typewriter 
