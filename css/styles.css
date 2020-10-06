@@ -10452,6 +10452,13 @@ aside {
   margin: 0;
   padding: 0;
 }
+.buttonLang :hover
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f4623a;
+}
 /* .typewriter 
 {
   overflow: hidden;
