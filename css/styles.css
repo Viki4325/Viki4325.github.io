@@ -4378,8 +4378,15 @@ input[type=button].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  transition: .5s;
 }
+
+.card:hover{
+  transform: scale(1.1);
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -4397,6 +4404,7 @@ input[type=button].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+  background: linear-gradient(-45deg,#ADA996,#F2F2F2,#DBDBDB,#EAEAEA);
 }
 
 .card-title {
@@ -6109,7 +6117,8 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #f4623a !important;  /*This primary ORANGE colour that should be changed as soon as possible*/
+  background-color: #f4623a !important;
+  background: linear-gradient(-45deg,#F09819,#f4623a);  /*This primary ORANGE colour that should be changed as soon as possible*/
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10227,23 +10236,45 @@ ul.social-icons li{
   display: inline;
 }
 
+#social-fb{
+  color: #3b5998 ;
+
+}
+
  #social-fb:hover {
-    color: #3B5998;
     zoom: 1.10;    
  }
+
+ #social-tw{
+  color: #00B6F1;
+ }
+
  #social-tw:hover {
     color: #00B6F1;
     zoom: 1.10;
 }
  
+#social-em{
+  color: #d6249f;
+  color: radial-gradient(circle at 30% 107%, #833ab4 20%, #fd1d1d 45%, #fcb045 60%);
+}
+
  #social-em:hover {
     color: #2c6a93;
     zoom: 1.10;
 }
  
+#social-gp{
+  color:#0e76a8 ;
+}
+
  #social-gp:hover {
   color: #04669A;
   zoom: 1.10;
+}
+
+#social-gh{
+  color:#040204;
 }
 
 #social-gh:hover {
@@ -10292,7 +10323,7 @@ ul.social-icons li{
 
 #SeeMore
 {
-  background-color: #FF9800 ;
+  background-color: var(--primary) ;
   border-radius:5px;
   outline:0;
   opacity: 5;
@@ -10438,7 +10469,7 @@ aside {
   margin: 25px;
   border-radius: 10px;
   width: 100px;
-  height: 40px;
+  height: 50px;
 }
 
 #lang
