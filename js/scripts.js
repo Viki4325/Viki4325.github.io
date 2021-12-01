@@ -262,3 +262,16 @@ function generateQuote(){
  // Repeat generateQuote() every 10 seconds
 setInterval(generateQuote() ,10000);
 //Note - 10000 milliseconds = 10
+
+
+$(function() {
+
+  $(".btn").on("click", function() {
+    //hide all sections
+    $(".content-section").fadeOut();
+    $(".content-section").hide();
+    //show the section depending on which button was clicked
+    $("#" + $(this).attr("data-section")).fadeIn();
+    $("#" + $(this).attr("data-section")).show();
+  });
+});
