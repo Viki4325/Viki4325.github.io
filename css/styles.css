@@ -10622,6 +10622,7 @@ blockquote{
   text-transform: uppercase;
   font-weight: 600;
   color: #9251ac;
+  text-align: center;
   letter-spacing: 1.5px;
 }
 .timeline__event__content {
@@ -10754,6 +10755,7 @@ blockquote{
   .timeline__event {
     flex-direction: column;
     align-self: center;
+    width: 80vw;
   }
   .timeline__event__content {
     width: 100%;
@@ -10814,6 +10816,31 @@ blockquote{
     left: 100%;
   }
 }
+
+.collapse:not(.show){
+  display: block;
+  overflow: hidden;
+  height: 10rem;
+}
+
+.collapsing{
+  height: 5rem;
+}
+
+#show_more.collapsed::after{
+  content: '+ show more';
+}
+
+#show_more:not(.collapsed)::after{
+  content: '- show less';
+}
+
+
+
+
+
+
+
 
 
 /* SPLIT EDUCATION/ WORK EXPERIENCE */
